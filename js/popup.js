@@ -48,7 +48,7 @@ function joinsocket(){
 			switch(data.command){
 				case 'lock':
 					if(data.value=="false"){ 
-						notifyMe('廁所'+data.toiletID+'，開門了！快去搶！');
+						notifyMe('廁所'+toiletname+'，開門了！快去搶！');
 					}
 					break;
 				default:

@@ -44,7 +44,6 @@ function joinsocket(){
 			msg = msg.replace(myRe,'');
 			var OBJjson = $.parseJSON(msg);
 			var data = OBJjson[0];
-			notifyMe(msg);
 			var toiletname = (data.toiletID==1)?'6F':'7F';
 			switch(data.command){
 				case 'lock':

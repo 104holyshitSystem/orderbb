@@ -1,0 +1,33 @@
+{
+  "manifest_version": 2,
+
+  "name": "廁所通報",
+  "description": "104內部廁所通報系統",
+  "version": "1.0",
+
+  "browser_action": {
+    "default_icon": "alert.png",
+    "default_popup": "popup.html",
+	"default_title": "Click here!"
+  },
+  "permissions": [
+    "activeTab",
+	"storage",
+	"notifications",
+    "https://ajax.googleapis.com/",
+	"http://172.19.7.235/",
+	"http://172.30.12.103/",
+	"http://www.w3schools.com/"
+  ],
+  "web_accessible_resources": [
+    "icon.png"
+  ],
+  "background":{
+	"scripts":["js/socket.io-1.3.7.js","js/jquery.min.js","js/popup.js"]
+	  }
+  /*,
+  "content_scripts": [ {
+    "js": [ "jquery.min.js" ],
+    "matches": [ "<all_urls>" ]
+  } ]*/
+}

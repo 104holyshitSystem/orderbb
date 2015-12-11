@@ -17,7 +17,12 @@ function notifyMe(message) {
       icon: 'alert.png',
       body: message,
     });
-
+	/*
+	setTimeout(function(){
+		notification.cancel();
+	},200);*/
+	setTimeout(notification.close.bind(notification), 2000);
+	//notification.cancel();
     //notification.onclick = function () {
     //  window.open("http://www.google.com.tw");      
     //};
@@ -29,7 +34,7 @@ function notifyMe(message) {
  
   $(function() {
 	  $('#noticeme').click(function(){
-		  notifyMe();
+		  notifyMe('check');
 		  });
 	    
   });

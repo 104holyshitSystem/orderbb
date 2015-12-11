@@ -56,6 +56,11 @@ function joinsocket(){
 						notifyMe('廁所'+toiletname+'，開門了！快去搶！');
 					}
 					break;
+				case 'warning':
+                    if(data.value=="on"){
+                        $('#messages').append($('<li>').text('[系統]廁所'+data.toiletID+'，戰況緊急，需要支援！'));
+                    }
+                    break;
 				default:
 					
 					break;

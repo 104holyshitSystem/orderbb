@@ -58,7 +58,7 @@ function joinsocket(){
 					break;
 				case 'warning':
                     if(data.value=="on"){
-                        $('#messages').append($('<li>').text('[系統]廁所'+data.toiletID+'，戰況緊急，需要支援！'));
+                        $('#messages').append($('<li>').text('[系統]廁所'+toiletname+'，戰況緊急，需要支援！'));
                     }
                     break;
 				default:

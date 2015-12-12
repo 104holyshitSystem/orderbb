@@ -23,9 +23,9 @@ function notifyMe(message) {
 	},200);*/
 	setTimeout(notification.close.bind(notification), 2000);
 	//notification.cancel();
-    //notification.onclick = function () {
-    //  window.open("http://www.google.com.tw");      
-    //};
+    notification.onclick = function () {
+      window.open("http://localhost/holyshit-online/app/index.php/toilet/live");      
+    };
     
   }
 
